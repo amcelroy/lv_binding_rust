@@ -30,7 +30,7 @@ pub enum Themes {
 /// should be configured and then added to an object.
 #[derive(Clone)]
 pub struct Style {
-    pub(crate) raw: Box<lvgl_sys::lv_style_t>,
+    pub(crate) raw: crate::mem::Box<lvgl_sys::lv_style_t>,
 }
 
 impl Debug for Style {
